@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>하노이의힘</title>
+    <style type="text/css">
+     #wrap{width:1200px;margin:0 auto;}
+     #header{position:relative}
+     ol{padding:0;margin:0;list-style:none;text-align:center;margin-top: 200px;}
+     ol li{display:block; height:30px; margin:0 auto;line-height:28px;}
+		  ol li.num6{width:300px;background:red;}
+			ol li.num5{width:300px;background:yellow;}
+      ol li.num4{width:250px;background:green;}
+      ol li.num3{width:200px;background:blue;}
+      ol li.num2{width:150px;background:purple;}
+      ol li.num1{width:100px;background:black;}
+       .hanoi_area{overflow:hidden;margin-top:40px;}
+       .hanoi_area>div{position:relative;float:left;width:320px;height:380px;margin-left:10px;border:3px solid orange;}
+       .hanoi_area>div:first-child{margin-left:0;}
+       .hanoi_area>div:after
+#wrap.success{background:url(img/bg_success.jpg) no-repeat 50% 50%; background-size:cover;}
+#wrap.success .hanoi {background:0 !important; border:0;}
+</style>
+<script type='text/javascript' src="js/stack.js"></script>
+<script type='text/javascript' src="js/hanoi.js"></script>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h4>하노이의힘</h4>
+	</div>
+	<div id="container">
+		<div id="content">
+			<button onclick="startGame();">시작</button>
+			<div class="hanoi_area">
+				<div class="hanoi" id="hanoi1"></div>
+				<div class="hanoi" id="hanoi2"></div>
+				<div class="hanoi" id="hanoi3"></div>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
