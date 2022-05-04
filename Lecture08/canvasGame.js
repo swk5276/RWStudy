@@ -8,7 +8,7 @@ var ctx = canvas.getContext("2d"); // 2. 마우스 클릭 이벤트 처리: 좌�
 //myCanvas.onmousedown = function(event)
 myCanvas.onclick = function(event)
 {
-	ctx.arc(event.x, event.y, 5, 0, Math.PI*2, true);
+	ctx.arc(event.x, event.y, 10, 0, Math.PI*2, true);
 	ctx.closePath();
   ctx.fillStyle='pink';
 	ctx.fill();
